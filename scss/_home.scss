@@ -1,0 +1,252 @@
+
+@import './utilities/color';
+.home{
+    background: rgb(0, 0, 0);
+color: white;
+    width: 100%;
+
+    height: 900px;
+// background: red;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+
+
+.content_home{
+    
+    // background: rgb(39, 102, 153);
+
+    height: 90%;
+
+width: 90%;
+
+// margin: 0 auto;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+.home_left{
+
+    display: flex;
+
+justify-content: center;
+
+align-items: flex-start;
+flex-direction: column;
+height: 100%;
+
+
+    width:40%;
+
+    span{
+    
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    h1{
+    }
+
+    p{
+    
+        margin-top: 15px;
+        font-size: 15px;
+    
+    }
+
+    .content_music{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 86%;
+        // background: red;
+        height: 100px;
+    
+    
+        .content_play{
+
+                    color: white;
+
+
+            font-size: 20px;
+            .fa-solid{
+
+            font-size: 40px;
+        
+        }
+        
+width: 5%;        
+        
+        }
+
+
+        .song_dowload{
+        
+i{
+
+    &:nth-child(1){
+    
+        margin-right: 5px;
+    
+    }
+
+}        
+        }
+
+        .content_range{
+            // background: #000;
+
+            span{
+            font-size: 10px;
+        }
+            width: 100%;        
+
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+width: 70%;  
+
+            input{
+           
+                
+    -webkit-appearance: none;
+    width: 70%;
+    height: 5px;
+    border-radius: 10px;
+
+    cursor: pointer;
+    background-color: aquamarine;
+
+    overflow: hidden;
+            
+            }
+        
+        }
+
+
+    
+    }
+
+    .ourApp{
+        margin-top: 20px;
+        width: 78%;
+        height: 130px;
+    // background: #000;
+
+    span{
+    }
+
+    .app{
+                height: 130px;
+
+        margin-top: 10px;
+    display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+
+
+.card_app{
+
+    box-shadow: 2px 5px 12px 9px rgba(97, 94, 94, 0.19);
+-webkit-box-shadow: 2px 5px 12px 9px rgba(122, 118, 118, 0.19);
+-moz-box-shadow: 2px 5px 12px 9px rgba(134, 132, 132, 0.19);
+            height: 130px;
+
+    // background: #000;
+    border: 1px solid white;
+    border-radius: 2px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+// background: #000;
+
+height: 70px;
+
+.img{
+    height: 60px;
+    width: 80px;
+            // background: red;
+
+
+    img{
+    
+        width: 100%;
+        height: 100%;
+        // background: red;
+
+
+    }
+    
+}
+
+.text{
+    margin-left: 5px;
+    display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-direction: column;
+    // padding-top: 10px;
+height: 40px;
+    width: 100%;
+
+            span{
+        font-size: 8px;
+        }
+
+        h1{
+        font-size: 20px;}
+    
+
+}
+
+}
+
+}
+}
+ 
+}
+
+.home_right{
+height: 100%;
+
+
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .img{
+    
+    height: 90%;
+    width: 90%;
+
+
+            img{
+
+    width: 100%;
+
+height: 100%;
+
+}
+
+
+    }
+
+
+
+
+}
+
+
+}
+
+}

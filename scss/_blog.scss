@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
+@import './utilities/color';
+
+
+.content_blog{
+
+
+    height: 750px;
+
+    width: 100%;
+
+    // background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .blog{
+        box-shadow: 2px 5px 12px 2px rgba(0,0,0,0.19);
+-webkit-box-shadow: 2px 5px 12px 2px rgba(0,0,0,0.19);
+-moz-box-shadow: 2px 5px 12px 2px rgba(0,0,0,0.19);
+
+        padding: 10px 20px;
+    
+        width: 62%;
+        height: 800px;
+        background: rgb(253, 252, 252);
+        position: absolute;
+        top: -100px;
+
+    //        display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+
+        .content_title{
+            // background: #000;
+        width: 100%;
+        height: 10%;
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+        h1{
+        
+            font-family: 'Mukta', sans-serif;
+
+            font-size: 30px;
+
+        }
+
+        button{
+        
+            padding: 5px 20px;
+            outline: none;
+            border: none;
+            background: none;
+
+            border: 1px solid $hover;
+            background: $hover;
+            color: white;
+        
+        }
+    
+    
+    
+    }
+.blog-card{
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    // background: rgb(25, 243, 91);
+    margin-bottom: 10px;
+
+.blog-img{
+    height: 90%;
+    width: 30%;
+    background: #000;
+
+    img{
+    width: 100%;
+
+    height: 100%;
+}
+
+}
+
+.blog-music{
+    // border-right: 1px solid rgba(0, 0, 0, 0.541);
+padding: 5px 20px;
+    width: 90%;
+height: 90%;
+    // background: #000;
+
+    h1{
+
+           font-family: 'Mukta', sans-serif;
+
+            font-size: 30px;
+
+    }
+
+    p{
+
+                    font-size: 19px;
+
+    
+    }
+      .content_music{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 86%;
+        // background: red;
+        height: 100px;
+    
+    
+        .content_play{
+
+                    color: $hover;
+
+
+            font-size: 20px;
+            .fa-solid{
+
+            font-size: 40px;
+        
+        }
+        
+width: 5%;        
+        
+        }
+
+
+        .song_dowload{
+        
+i{
+
+    &:nth-child(1){
+    
+        margin-right: 5px;
+    
+    }
+
+}        
+        }
+
+        .content_range{
+            // background: #000;
+
+            span{
+            font-size: 10px;
+        }
+            width: 100%;        
+
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+width: 70%;  
+
+            input{
+           
+                
+    -webkit-appearance: none;
+    width: 70%;
+    height: 5px;
+    border-radius: 10px;
+
+    cursor: pointer;
+    // background-color: aquamarine;
+
+    overflow: hidden;
+            
+            }
+        
+        }
+
+
+    
+    }
+
+    &::before{
+
+        margin-top: 40px;
+        position: absolute;
+    content: '';
+    right: 0px;
+    height: 100px;
+    top: 0px;
+    bottom: 0px;
+    border: 1px solid rgba(39, 36, 36, 0.582);
+    }
+
+position: relative;
+
+}
+.blog-about{
+    width: 30%;
+height: 90%;
+    // background: rgb(230, 163, 163);
+
+    ul{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 10px;
+        color: rgb(44, 39, 39);
+    
+    li{
+
+        list-style-type: none;
+    
+    
+    }
+    
+    
+    }
+
+}
+
+
+
+// background: rgb(172, 108, 108);
+}
+
+.card_dowload{
+    margin-top: 20px;
+
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+button{
+    outline: none;
+    border: none;
+    background: none;
+    margin: 0 auto;
+padding: 10px 25px;
+
+border: 1px solid $hover;
+color: $hover;
+
+transition: all .8s;
+
+&:hover{
+
+
+    background: $hover;
+
+    color: white;
+}
+
+}
+
+
+
+
+
+}
+
+}
+    
+    }
+
