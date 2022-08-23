@@ -10,6 +10,7 @@ body {
       background: #121212;
       overflow: hidden;
 
+
 }
 
 body {
@@ -460,6 +461,7 @@ button {
 
 .burgeur_menu {
 
+
       position: absolute;
       display: flex;
       justify-content: center;
@@ -474,6 +476,9 @@ button {
 
 
       .burgeur_menu_top {
+
+            padding-top: 4%;
+
 
             width: 100%;
             height: 50%;
@@ -552,6 +557,11 @@ button {
       font-family: var(--primary-font);
       font-size: 3rem;
       margin-bottom: 2rem;
+
+      @media (max-width:892px) {
+            font-size: 2rem;
+
+      }
 }
 
 .menu__left__inner__item:last-child {
@@ -578,6 +588,12 @@ button {
       font-family: var(--primary-font);
       font-size: 3rem;
       color: var(--third-color);
+
+      @media (max-width:892px) {
+            font-size: 2rem;
+
+      }
+
 }
 
 .menu__right__inner__item ul {
@@ -811,6 +827,8 @@ button {
                   .hero2 {
                         position: relative;
 
+                        display: none;
+
 
                         width: 60%;
                         height: 50%;
@@ -867,14 +885,11 @@ button {
 
 
                         .buttons {
-                            
 
-                              #one {
-                              }
 
-                              #two {
-                                   
-                              }
+                              #one {}
+
+                              #two {}
 
                         }
 
@@ -884,7 +899,7 @@ button {
                   }
 
 
-                  
+
             }
 
             .contain-img {
@@ -897,6 +912,10 @@ button {
 
       }
 
+      .media {
+            position: relative;
+            display: none;
+      }
 
 
 }
@@ -966,6 +985,62 @@ button {
 
 
 
+
+
+
+}
+
+
+
+@media (max-width:892px) {
+
+
+      .landingLink {
+            display: none;
+      }
+
+      .menu {
+            opacity: 0;
+            margin-right: 3%;
+            position: fixed;
+            color: $cool;
+            right: 2em;
+            top: 4px;
+            line-height: 80px;
+            z-index: 1;
+      }
+
+
+      .logo {
+            height: 100%;
+            padding-top: 15px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            font-family: Poppins;
+            line-height: 80px;
+            margin-left: 2em;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            text-transform: uppercase;
+            z-index: 600;
+
+            span {
+                  margin-left: 15px;
+
+                  font-size: 20px;
+
+            }
+
+      }
+
+      .toggle {
+            height: 100%;
+      }
 
 
 
