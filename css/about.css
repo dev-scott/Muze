@@ -1,14 +1,4 @@
-/* Import Fonts & All CSS */
-@import 'css/default-assets/hkgrotesk-fonts.css';
-@import 'css/bootstrap.min.css';
-@import 'css/animate.css';
-@import 'css/default-assets/classy-nav.css';
-@import 'css/owl.carousel.min.css';
-@import 'css/magnific-popup.css';
-@import 'css/default-assets/audioplayer.css';
-@import 'css/font-awesome.min.css';
-html,
-body {
+html, body {
   margin: 0%;
   padding: 0%;
   width: 100%;
@@ -20,7 +10,7 @@ body {
 body {
   background: url(hero.jpg) no-repeat 50% 50%;
   background-size: cover;
-  background: #000;
+  background: rgb(184, 162, 162);
 }
 
 body.open .burgeur_menu_bottom {
@@ -136,30 +126,12 @@ img {
   font-size: 24px;
 }
 
-.container-home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-}
-
 .header {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 1;
-  width: 60%;
-  height: 100%;
-}
-.header .header-container {
   position: absolute;
-  top: 20%;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: column;
+  top: 46%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .ml7 {
@@ -195,7 +167,7 @@ h1 {
 }
 
 #tagline {
-  max-width: 640px;
+  width: 640px;
 }
 
 p {
@@ -482,35 +454,37 @@ button {
     transform: rotate(360deg);
   }
 }
-.contain-img {
-  width: 40%;
-  height: 100%;
-  position: relative;
-  padding-right: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 900px) {
+  .loading-screen {
+    display: none;
+  }
+  .ring img {
+    display: none;
+  }
+  .header p, button, .media, h1 {
+    display: none;
+  }
 }
-
 .hero {
   background: url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 40%;
-  height: 30%;
+  width: 23%;
+  height: 56vh;
   position: absolute;
-  top: 15%;
-  left: 0%;
+  bottom: 0;
+  left: 60%;
 }
 
 .hero2 {
   background: url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 60%;
-  height: 40%;
+  width: 13%;
+  height: 36vh;
   position: absolute;
-  bottom: 20%;
+  bottom: 40%;
+  left: 55%;
 }
 
 .loader2 {
@@ -524,69 +498,131 @@ button {
   opacity: 0;
 }
 
-@media (max-width: 1400px) {
-  .container-home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .container-home .header {
-    height: min-content;
-    width: 100%;
-    height: 50%;
-  }
-  .container-home .header .header-container {
-    width: 80%;
-  }
-  .container-home .contain-img {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .container-home .contain-img .hero {
-    display: none;
-  }
-  .container-home .contain-img .hero2 {
-    position: relative;
-    width: 60%;
-    height: 50%;
-  }
+ul {
+  list-style: none;
 }
-@media (max-width: 892px) {
-  .container-home .header .header-container {
-    width: 80%;
-  }
-  .container-home .header .header-container h1 {
-    font-size: 30px !important;
-  }
-  .container-home .header .header-container p {
-    color: rgb(228, 220, 220);
-    font-weight: 200;
-    font-family: "Roboto";
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 15px;
-  }
+
+/* NAVBAR
+=========================== */
+/* SOCIAL MEDIA
+=========================== */
+/* TEXT
+=========================== */
+.text {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  transform: rotate(-90deg);
 }
-@media (max-width: 376px) {
-  .container-home .header .header-container {
-    width: 80%;
-  }
-  .container-home .header .header-container .buttons {
-    height: min-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .container-home .header .header-container .buttons #one {
-    width: 100%;
-  }
-  .container-home .header .header-container .buttons #two {
-    margin-top: 20px;
-    width: 100%;
-  }
-}/*# sourceMappingURL=style.css.map */
+
+.text h1 {
+  font-size: 120px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: -10px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+  width: 600px;
+}
+
+.text h1 .hidetext {
+  position: absolute;
+}
+
+.text h2 {
+  position: absolute;
+  top: 40px;
+  left: -80px;
+  color: #EFDE74;
+  z-index: -1;
+  font-size: 150px;
+  font-weight: 600;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.text h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
+  position: relative;
+  overflow: hidden;
+  height: 80px;
+}
+
+.text h3 .hidetext {
+  position: absolute;
+}
+
+.text p {
+  width: 200px;
+  font-size: 12px;
+  margin-top: 30px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  height: 110px;
+}
+
+.text p .hidetext {
+  position: absolute;
+}
+
+/* SPONSOR
+=========================== */
+.sponsor {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  text-align: center;
+}
+
+.sponsor img {
+  width: 200px;
+  transform: rotate(-90deg);
+}
+
+.sponsor p {
+  margin-top: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+  transform: rotate(180deg);
+}
+
+/* DISTORTION
+=========================== */
+.distortion {
+  width: 580px;
+  height: 720px;
+  position: absolute;
+  right: 300px;
+  bottom: 0;
+}
+
+/* OVERLAY
+=========================== */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  z-index: 99;
+}
+
+.first {
+  background: #efde74;
+}
+
+.second {
+  background: #efde74;
+  left: 33.3%;
+}
+
+.third {
+  background: #efde74;
+  left: 66.6%;
+}/*# sourceMappingURL=about.css.map */
