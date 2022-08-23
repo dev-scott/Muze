@@ -546,6 +546,15 @@ button {
   .container-home .header {
     height: min-content;
   }
+  .container-home .header .header-container {
+    top: 5%;
+  }
+  .container-home .header .header-container .buttons {
+    margin-top: 5px;
+  }
+  .container-home .header .header-container .buttons #two {
+    margin-top: 15px;
+  }
   .container-home .contain-img .hero {
     display: none;
   }

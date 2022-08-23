@@ -795,6 +795,8 @@ button {
 
                   .header-container {
 
+                        top: 5%;
+
 
 
 
@@ -805,10 +807,13 @@ button {
                         .p2 {}
 
                         .buttons {
+                              margin-top: 5px;
 
                               #one {}
 
-                              #two {}
+                              #two {
+                                    margin-top: 15px;
+                              }
 
                         }
 
